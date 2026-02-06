@@ -1,0 +1,49 @@
+@{
+    ViewBag.Title = "Опрос по школьному питанию";
+}
+@model UserFormModel
+<main>
+    <form action="/Form/DoTest" method="post">
+        <p>В каком классе ты учишься?</p>
+        <input type="number" asp-for="LearningClass" />
+        <span asp-validation-for="LearningClass" class="text-danger"></span>
+
+        <p>В каком муниципальном/городском округе расположена твоя школа?</p>
+        <input type="text" asp-for="MunicipalDistrict" />
+        <span asp-validation-for="MunicipalDistrict" class="text-danger"></span>
+
+        <p>Нравится ли тебе питание в школьной столовой?</p>
+        <input type="text" asp-for="AnswerForFood1" />
+        <span asp-validation-for="AnswerForFood1" class="text-danger"></span>
+
+        <p>Если не нравится питание в школьной столовой, объясни почему?</p>
+        <input type="text" asp-for="AnswerForFood2" />
+        <span asp-validation-for="AnswerForFood2" class="text-danger"></span>
+
+        <p>В школе я чаще всего</p>
+        <input type="text" asp-for="AnswerForFood3" />
+        <span asp-validation-for="AnswerForFood3" class="text-danger"></span>
+
+        <p>Как часто ты покупаешь перекус в школьном буфете?</p>
+        <input type="text" asp-for="AnswerForFood4" />
+        <span asp-validation-for="AnswerForFood4" class="text-danger"></span>
+
+        <p>Напиши какая еда в школьной столовой тебе нравится больше всего?</p>
+        <input type="text" asp-for="AnswerForFood5" />
+        <span asp-validation-for="AnswerForFood5" class="text-danger"></span>
+
+        <p>Напиши какая еда в школьной столовой тебе не нравится?</p>
+        <input type="text" asp-for="AnswerForFood6" />
+        <span asp-validation-for="AnswerForFood6" class="text-danger"></span>
+
+        <p>Как часто в вашей школе проводятся беседы о здоровом питании?</p>
+        <input type="text" asp-for="AnswerForFood7" />
+        <span asp-validation-for="AnswerForFood7" class="text-danger"></span>
+
+        <p>Напишите свои предложения по улучшению питания в школе</p>
+        <input type="text" asp-for="AnswerForFood8" />
+        <span asp-validation-for="AnswerForFood8" class="text-danger"></span>
+
+        <button type="submit">Отправить</button>
+    </form>
+</main>
