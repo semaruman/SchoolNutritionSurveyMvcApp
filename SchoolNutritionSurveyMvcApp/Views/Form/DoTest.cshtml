@@ -5,7 +5,15 @@
 <main>
     <form action="/Form/DoTest" method="post">
         <p>В каком классе ты учишься?</p>
-        <input type="number" asp-for="LearningClass" />
+        <div>
+            <input type="radio" value="4" asp-for="LearningClass"/>1 - 4
+        </div> 
+        <div>
+            <input type="radio" value="9" asp-for="LearningClass"/>5 - 9
+        </div> 
+        <div>
+            <input type="radio" value="11" asp-for="LearningClass"/>10 - 11
+        </div>
         <span asp-validation-for="LearningClass" class="text-danger"></span>
 
         <p>В каком муниципальном/городском округе расположена твоя школа?</p>
@@ -13,19 +21,69 @@
         <span asp-validation-for="MunicipalDistrict" class="text-danger"></span>
 
         <p>Нравится ли тебе питание в школьной столовой?</p>
-        <input type="text" asp-for="AnswerForFood1" />
+        <div>
+            <input type="radio" value="Да" asp-for="AnswerForFood1" />Да
+        </div>
+        <div>
+            <input type="radio" value="Скорее да" asp-for="AnswerForFood1" />Скорее да
+        </div>
+        <div>
+            <input type="radio" value="Скорее нет" asp-for="AnswerForFood1" />Скорее нет
+        </div>
+        <div>
+            <input type="radio" value="Нет" asp-for="AnswerForFood1" />Нет
+        </div>
         <span asp-validation-for="AnswerForFood1" class="text-danger"></span>
 
         <p>Если не нравится питание в школьной столовой, объясни почему?</p>
-        <input type="text" asp-for="AnswerForFood2" />
+        <div>
+            <input type="radio" value="Меня всё устраивает" asp-for="AnswerForFood2" />Меня всё устраивает
+        </div>
+        <div>
+            <input type="radio" value="Невкусно готовят" asp-for="AnswerForFood2" />Невкусно готовят
+        </div>
+        <div>
+            <input type="radio" value="Однообразное питание" asp-for="AnswerForFood2" />Однообразное питание
+        </div>
+        <div>
+            <input type="radio" value="Готовят нелюбимую пищу" asp-for="AnswerForFood2" />Готовят нелюбимую пищу
+        </div>
+        <div>
+            <input type="radio" value="Остывшая еда" asp-for="AnswerForFood2" />Остывшая еда
+        </div>
+        <div>
+            <input type="radio" value="Маленькие порции" asp-for="AnswerForFood2" />Маленькие порции
+        </div>
         <span asp-validation-for="AnswerForFood2" class="text-danger"></span>
 
         <p>В школе я чаще всего</p>
-        <input type="text" asp-for="AnswerForFood3" />
+        <div>
+            <input type="radio" value="Завтракаю" asp-for="AnswerForFood3" />Завтракаю
+        </div>
+        <div>
+            <input type="radio" value="Завтракаю и обедаю" asp-for="AnswerForFood3" />Завтракаю и обедаю
+        </div>
+        <div>
+            <input type="radio" value="Обедаю" asp-for="AnswerForFood3" />Обедаю
+        </div>
+        <div>
+            <input type="radio" value="Не кушаю в школе" asp-for="AnswerForFood3" />Не кушаю в школе
+        </div>
         <span asp-validation-for="AnswerForFood3" class="text-danger"></span>
 
         <p>Как часто ты покупаешь перекус в школьном буфете?</p>
-        <input type="text" asp-for="AnswerForFood4" />
+        <div>
+            <input type="radio" value="Каждый день" asp-for="AnswerForFood4" />Каждый день
+        </div>
+        <div>
+            <input type="radio" value="2-3 раза в неделю" asp-for="AnswerForFood4" />2-3 раза в неделю
+        </div>
+        <div>
+            <input type="radio" value="Один раз в неделю" asp-for="AnswerForFood4" />Один раз в неделю
+        </div>
+        <div>
+            <input type="radio" value="Практически не покупаю перекус в школьном буфете" asp-for="AnswerForFood4" />Практически не покупаю перекус в школьном буфете
+        </div>
         <span asp-validation-for="AnswerForFood4" class="text-danger"></span>
 
         <p>Напиши какая еда в школьной столовой тебе нравится больше всего?</p>
@@ -37,7 +95,18 @@
         <span asp-validation-for="AnswerForFood6" class="text-danger"></span>
 
         <p>Как часто в вашей школе проводятся беседы о здоровом питании?</p>
-        <input type="text" asp-for="AnswerForFood7" />
+        <div>
+            <input type="radio" value="Каждую неделю" asp-for="AnswerForFood7" />Каждую неделю
+        </div>
+        <div>
+            <input type="radio" value="Каждую четверть" asp-for="AnswerForFood7" />Каждую четверть
+        </div>
+        <div>
+            <input type="radio" value="Раз в год" asp-for="AnswerForFood7" />Раз в год
+        </div>
+        <div>
+            <input type="radio" value="У нас такие беседы не проводятся" asp-for="AnswerForFood7" />У нас такие беседы не проводятся
+        </div>
         <span asp-validation-for="AnswerForFood7" class="text-danger"></span>
 
         <p>Напишите свои предложения по улучшению питания в школе</p>
