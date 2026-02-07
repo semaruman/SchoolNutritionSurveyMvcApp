@@ -16,24 +16,31 @@ public class UserFormModel
     [Display(Name = "Нравится ли питание в школьной столовой?")]
     public string AnswerForFood1 { get; set; }
     
+    [Required(ErrorMessage = "Пожалуйста, ответьте на вопрос")]
     [Display(Name = "Если не нравится, объясните почему?")]
     public string AnswerForFood2 { get; set; }
     
+    [Required(ErrorMessage = "Пожалуйста, ответьте на вопрос")]
     [Display(Name = "В школе я чаще всего...")]
     public string AnswerForFood3 { get; set; }
     
+    [Required(ErrorMessage = "Пожалуйста, ответьте на вопрос")]
     [Display(Name = "Частота покупки перекуса в буфете")]
     public string AnswerForFood4 { get; set; }
     
+    [Required(ErrorMessage = "Пожалуйста, ответьте на вопрос")]
     [Display(Name = "Какая еда нравится больше всего?")]
     public string AnswerForFood5 { get; set; }
     
+    [Required(ErrorMessage = "Пожалуйста, ответьте на вопрос")]
     [Display(Name = "Какая еда не нравится?")]
     public string AnswerForFood6 { get; set; }
     
+    [Required(ErrorMessage = "Пожалуйста, ответьте на вопрос")]
     [Display(Name = "Как часто проводятся беседы о здоровом питании?")]
     public string AnswerForFood7 { get; set; }
     
+    [Required(ErrorMessage = "Пожалуйста, ответьте на вопрос")]
     [Display(Name = "Предложения по улучшению питания")]
     [StringLength(500, ErrorMessage = "Предложение не должно превышать 500 символов")]
     public string AnswerForFood8 { get; set; }

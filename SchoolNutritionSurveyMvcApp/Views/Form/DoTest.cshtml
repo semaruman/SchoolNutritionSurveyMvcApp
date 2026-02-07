@@ -17,7 +17,33 @@
         <span asp-validation-for="LearningClass" class="text-danger"></span>
 
         <p>В каком муниципальном/городском округе расположена твоя школа?</p>
-        <input type="text" asp-for="MunicipalDistrict" />
+        <div>
+            <select asp-for="MunicipalDistrict">
+                <option value="Алатырский МО">Алатырский МО</option>
+                <option value="Аликовский МО">Аликовский МО</option>
+                <option value="Батыревский МО">Батыревский МО</option>
+                <option value="Вурнарский МО">Вурнарский МО</option>
+                <option value="Ибресинский МО">Ибресинский МО</option>
+                <option value="Канашский МО">Канашский МО</option>
+                <option value="Козловский МО">Козловский МО</option>
+                <option value="Комсомольский МО">Комсомольский МО</option>
+                <option value="Красноармейский МО">Красноармейский МО</option>
+                <option value="Красночетайский МО">Красночетайский МО</option>
+                <option value="Мариинско-Посадский МО">Мариинско-Посадский МО</option>
+                <option value="Моргаушский МО">Моргаушский МО</option>
+                <option value="Порецкий МО">Порецкий МО</option>
+                <option value="Урмарский МО">Урмарский МО</option>
+                <option value="Цивильский МО">Цивильский МО</option>
+                <option value="Чебоксарский МО">Чебоксарский МО</option>
+                <option value="Шемуршинский МО">Шемуршинский МО</option>
+                <option value="Шумерлинский МО">Шумерлинский МО</option>
+                <option value="Ядринский МО">Ядринский МО</option>
+                <option value="Яльчикский МО">Яльчикский МО</option>
+                <option value="Янтиковский МО">Янтиковский МО</option>
+                <option value="г. Новочебоксарск МО">г. Новочебоксарск МО</option>
+                <option value="г. Чебоксары МО">г. Чебоксары МО</option>
+            </select>
+        </div>
         <span asp-validation-for="MunicipalDistrict" class="text-danger"></span>
 
         <p>Нравится ли тебе питание в школьной столовой?</p>
