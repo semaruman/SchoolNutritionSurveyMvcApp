@@ -2,6 +2,8 @@ using System.ComponentModel.DataAnnotations;
 
 public class UserFormModel
 {
+    public int Id { get; set; }
+
     [Required(ErrorMessage = "Пожалуйста, укажите класс обучения")]
     [Range(1, 11, ErrorMessage = "Класс должен быть от 1 до 11")]
     [Display(Name = "Класс обучения")]
