@@ -1,9 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SchoolNutritionSurveyMvcApp.Services.Interfaces;
 
 namespace SchoolNutritionSurveyMvcApp.Controllers
 {
     public class FormController : Controller
     {
+        private IUserService _userService;
+
+        public FormController(IUserService userService)
+        {
+            _userService = userService;
+        }
+
         public IActionResult Index()
         {
             return RedirectToAction("DoTest");
@@ -21,8 +29,7 @@ namespace SchoolNutritionSurveyMvcApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                var db = new UserJsonSevice();
-                db.AddToDatabase(user);
+                _userService.AddToDatabase(user);
                 return RedirectToAction("Result");
             }
             return View(user);
