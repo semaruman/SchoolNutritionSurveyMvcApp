@@ -7,5 +7,10 @@
 
 
 
-<h4>Структура приложения:</h4>
-<img width="363" height="710" alt="image" src="https://github.com/user-attachments/assets/e8d5b4f8-b398-4a2a-b913-d5721770c745" />
+<h4>Базы данных:</h4>
+
+<div>
+  <img width="1137" height="383" alt="image" src="https://github.com/user-attachments/assets/cd4053d0-fd7d-4c75-9ffb-407b247a6077" />
+<img width="1340" height="65" alt="image" src="https://github.com/user-attachments/assets/ced9e600-60e1-4c32-b147-327b9bf9f2ba" />
+
+</div>
