@@ -21,7 +21,7 @@ namespace SchoolNutritionSurveyMvcApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                var db = new UsersDb();
+                var db = new UserJsonSevice();
                 db.AddToDatabase(user);
                 return RedirectToAction("Result");
             }

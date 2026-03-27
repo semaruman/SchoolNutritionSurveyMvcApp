@@ -1,6 +1,7 @@
 using System.Text.Json;
+using SchoolNutritionSurveyMvcApp.Services.Interfaces;
 
-public class UsersDb
+public class UserJsonSevice : IUserService
 {
     private readonly string filePath = "UsersDb.json";
     public void AddToDatabase(UserFormModel user)
